@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; background: #f4f4f9; }
+        .container { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 350px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #007bff; color: white; border: none; cursor: pointer; }
+        .result { margin-top: 20px; font-weight: bold; }
+        .Strong { color: green; } .Moderate { color: orange; } .Weak { color: red; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Password Checker</h2>
+        <form method="POST">
+            <input type="password" name="password" placeholder="Enter password" required>
+            <button type="submit">Check Strength</button>
+        </form>
+
+        {% if result %}
+            <div class="result">
+                Status: <span class="{{ result }}">{{ result }}</span>
+                {% if result == "Moderate" %}
+                    <p style="font-size: 0.9em; font-weight: normal;">{{ suggestion }}</p>
+                {% elif result == "Weak" %}
+                    <p style="font-weight: normal;">Suggested: <code>{{ suggestion }}</code></p>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
