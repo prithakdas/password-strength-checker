@@ -30,6 +30,7 @@ This documentation explains how to set up and run the project on Windows and Lin
 #### Windows / Linux
 ```bash
 git clone https://github.com/prithakdas/password-strength-checker.git
+cd password-strength-checker
 ```
 
 ---
@@ -123,5 +124,6 @@ password-strength-checker/
 This documentation demonstrates how the same Flask project can be executed on both
 Windows and Linux, with only minor command differences related to Python and virtual
 environment activation.
+
 
 
