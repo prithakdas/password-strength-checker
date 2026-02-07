@@ -29,14 +29,7 @@ This documentation explains how to set up and run the project on Windows and Lin
 
 #### Windows / Linux
 ```bash
-git clone -b password-checker https://github.com/prithakdas/Cyber-Security.git
-```
-
-If client already cloned full repo:
-```bash
-git clone https://github.com/prithakdas/Cyber-Security.git
-cd Cyber-Security
-git checkout password-checker
+git clone https://github.com/prithakdas/password-strength-checker.git
 ```
 
 ---
@@ -109,7 +102,7 @@ http://127.0.0.1:5000
 
 ## Project Structure
 ```text
-password-checker/
+password-strength-checker/
 ├── app.py
 ├── requirements.txt
 ├── templates/
@@ -130,4 +123,5 @@ password-checker/
 This documentation demonstrates how the same Flask project can be executed on both
 Windows and Linux, with only minor command differences related to Python and virtual
 environment activation.
+
 
