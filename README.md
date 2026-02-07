@@ -72,14 +72,14 @@ After activation, `(venv)` will appear in the terminal.
 pip install -r requirements.txt
 ```
 
-#### Linux
-```bash
-pip install flask requests
-```
-
 If `pip install -r requirements.txt` command fails in Windows, then use:
 ```powershell
 python.exe -m pip install --upgrade pip
+```
+
+#### Linux
+```bash
+pip install flask requests
 ```
 
 ---
@@ -124,6 +124,7 @@ password-strength-checker/
 This documentation demonstrates how the same Flask project can be executed on both
 Windows and Linux, with only minor command differences related to Python and virtual
 environment activation.
+
 
 
 
